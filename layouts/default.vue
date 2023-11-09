@@ -21,10 +21,7 @@ console.log( mainContent );
         <h1>{{ mainContent.mainContent.titleSite }}</h1>
         <h2>{{ mainContent.mainContent.linksMainNav }}</h2>
 
-        <div v-for="linksMainNav in mainContent.mainContent" :key="linksMainNav.id">
-            <h2>{{ linksMainNav.id }}</h2>
-        </div>
-   
+     
         <nav>
             <nuxt-link to="/"></nuxt-link> |
             <nuxt-link to="/about">About</nuxt-link> |
