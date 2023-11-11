@@ -5,7 +5,7 @@ import nav from '@/cms/queries/nav';
 
 //const { data: articles, pending: postsPending, error: blogError } = await useLazyAsyncQuery(articles);
 // const { data: articlePost } = await useLazyAsyncQuery(articles);
-
+/*
 const { data: mainContent, pending: postsPending, error: blogError } = await useLazyAsyncQuery(nav);
 
 //const { data: mainContent } = await useLazyAsyncQuery(nav);
@@ -15,7 +15,7 @@ const { data: mainContent, pending: postsPending, error: blogError } = await use
 console.log( mainContent );
 
 
-
+*/
 </script>
 
 
@@ -23,7 +23,7 @@ console.log( mainContent );
     <div>
  
       
-        <!-- <h2>{{ mainContent.titleSite }}</h2> -->
+        <!-- <h2>{{ mainContent.titleSite }}</h2> 
 
     <ul v-if="!pending">
         <li v-for="link in mainContent.mainContent.navLinks" :key="link.id">
@@ -31,7 +31,7 @@ console.log( mainContent );
         </li>
     </ul>
     <p v-else-if="pending">Loading...</p>
-
+-->
         <!-- <p>{{mainContent.mainContent.linksMainNav.linksNavMain[0].title }}</p> -->
      
         <nav>
