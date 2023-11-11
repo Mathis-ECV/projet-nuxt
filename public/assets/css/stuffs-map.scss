@@ -1,35 +1,33 @@
 
 
+.map-top-view{
+    position: relative;
+    width: 500px;
+    aspect-ratio: 1;
+
+    .pin{
+        width: 16px;
+        height: 16px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+
+        &.pin-throwing{
+            background-color: blue;
+        }
+
+        &.pin-landing{
+            height: 30px;
+            width: 30px;
+            background-color: transparent;
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+    }
+}
 
 .main-content-map{
     display: grid;
     grid-template-areas: '. .';
     grid-template-columns: repeat(2, 1fr);
-
-    .map-top-view{
-        position: relative;
-        width: 500px;
-        aspect-ratio: 1;
-
-        .pin{
-            width: 16px;
-            height: 16px;
-            background-color: red;
-            border-radius: 50%;
-            position: absolute;
-
-            &.pin-throwing{
-                background-color: blue;
-            }
-
-            &.pin-landing{
-                height: 30px;
-                width: 30px;
-                background-color: transparent;
-                background-position: left top;
-                background-repeat: no-repeat;
-            }
-        }
-    }
-
 }
