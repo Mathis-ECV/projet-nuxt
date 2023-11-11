@@ -1,0 +1,7 @@
+.container-cards-map{
+    display: grid;
+    grid-template-areas: '. . .';
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 0 auto;
+}

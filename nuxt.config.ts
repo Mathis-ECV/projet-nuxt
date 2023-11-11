@@ -22,7 +22,10 @@ export default defineNuxtConfig({
     head: {
       script: [
         { type: 'text/javascript', hid: 'main', src: '/assets/js/main.js' }
-      ]
+      ],
+      link: [
+        { rel: 'stylesheet', href: '/assets/main.css' },
+      ],
     }
   }
 })
