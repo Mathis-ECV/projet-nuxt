@@ -5,7 +5,12 @@ import nav from '@/cms/queries/nav';
 
 //const { data: articles, pending: postsPending, error: blogError } = await useLazyAsyncQuery(articles);
 // const { data: articlePost } = await useLazyAsyncQuery(articles);
-const { data: mainContent } = await useLazyAsyncQuery(nav);
+
+const { data: mainContent, pending: postsPending, error: blogError } = await useLazyAsyncQuery(nav);
+
+//const { data: mainContent } = await useLazyAsyncQuery(nav);
+
+
 
 console.log( mainContent );
 
@@ -14,13 +19,20 @@ console.log( mainContent );
 </script>
 
 
-
 <template>
     <div>
  
-        <h1>{{ mainContent.mainContent.titleSite }}</h1>
-        <h2>{{ mainContent.mainContent.linksMainNav }}</h2>
+      
+        <!-- <h2>{{ mainContent.titleSite }}</h2> -->
 
+    <ul v-if="!pending">
+        <li v-for="link in mainContent.mainContent.navLinks" :key="link.id">
+            {{ link.title }}
+        </li>
+    </ul>
+    <p v-else-if="pending">Loading...</p>
+
+        <!-- <p>{{mainContent.mainContent.linksMainNav.linksNavMain[0].title }}</p> -->
      
         <nav>
             <nuxt-link to="/"></nuxt-link> |

@@ -3,21 +3,18 @@
 
   export default gql`
 query nav{
-    mainContent {
-        titleSite
-        linksMainNav {
-          linksNavMain {
-            ... on ArticleRecord {
-              id
-              articleTitle
-            }
-            ... on ContactRecord {
-              id
-              titre
-              slugContact
-            }
-          }
-        }
+  mainContent {
+    titleSite
+    navLinks {
+      ... on ArticleRecord {
+        id
+        title
       }
+      ... on ContactRecord {
+        id
+        title
+      }
+    }
+  }
 }`
 

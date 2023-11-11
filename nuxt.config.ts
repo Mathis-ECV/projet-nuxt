@@ -18,4 +18,15 @@ export default defineNuxtConfig({
       default: './config/apollo.ts'
     }
   },
+  app: {
+    head: {
+      script: [
+        {
+          src: "/assets/js/main.js",
+          async: true,
+          crossorigin: "anonymous"
+        },
+      ],
+    }
+  }
 })
