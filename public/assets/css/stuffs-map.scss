@@ -1,0 +1,17 @@
+.map-top-view{
+    position: relative;
+    width: 500px;
+    aspect-ratio: 1;
+    
+    .pin{
+        width: 16px;
+        height: 16px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+
+        &.pin-throwing{
+            background-color: blue;
+        }
+    }
+}

@@ -1,4 +1,8 @@
 .container {
   width: clamp(200px, 100%, 1200px);
   margin: 0 auto;
+}
+
+.is-hidden {
+  display: none;
 }/*# sourceMappingURL=content.css.map */

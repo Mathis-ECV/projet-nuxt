@@ -16,23 +16,38 @@ const getStuffPropertyName = () => {
 </script>
 
 <template>
-  <div>
+
+  <section class="container">
     <h1>Maps</h1>
 
     <div v-for="map in AllMaps_data.allMaps" :key="map.id">
       <!-- Vérifie si la carte existe -->
       <div v-if="slug === map.mapSlug">
-        <h1>La map existe :</h1>
-        <h2>{{ map.mapTitle }}</h2>
-        <img :src="map.mapThumbnail.url" alt="Top View" />
-        <img :src="map.mapTopView.url" alt="Top View" />
-
+        <h1>{{ map.mapTitle }}</h1>
+       
         <div v-for="stuffs in AllStuffs[getStuffPropertyName()]" :key="stuffs.id">
-          <h2>{{ stuffs.stuffTitle }}</h2>
-          <h2>{{ stuffs.stuffType }}</h2>
-          <h2>{{ stuffs.stuffSide }}</h2>
+
+            <h2>{{ stuffs.stuffTitle }}</h2>
+            <h2>{{ stuffs.stuffType }}</h2>
+            <h2>{{ stuffs.stuffSide }}</h2>
+
+            <div class="map-top-view" :style="{ 'background-image': `url(${map.mapTopView.url})` }" >
+                <div class="pin pin-landing" ref="pin-landing" :style="{ left: `${stuffs.stuffLandingPositionX}%`, top: `${stuffs.stuffLandingPositionY}%` }"></div>
+
+                <div v-for="throwing_position in stuffs.stuffThrowing" :key="throwing_position .id">
+                    <div class="pin pin-throwing" ref="pin-throwing" :style="{ left: `${throwing_position.stuffThrowingPositionX}%`, top: `${throwing_position.stuffThrowingPositionY}%` }"></div>
+                    <h2>{{ throwing_position.stuffThrowingType }}</h2>
+                </div>
+            </div>
+
+            <div class="content-stuff">
+                <h2></h2>
+            </div>
+    
         </div>
+
       </div>
     </div>
-  </div>
+  </section>
+
 </template>

@@ -12,7 +12,7 @@
         <div class="container-cards-map">
             <div class="card-map" v-for="map in AllMaps_data.allMaps" :key="map.id">
                 <h2>{{ map.mapTitle }}</h2>
-                <img  :src="map.mapThumbnail.url" alt="Top View" />
+                <img  :src="map.mapThumbnail.url" alt="Map Thumbnail" />
                 <nuxt-link v-if="map.mapSlug" :to="'/map/' + map.mapSlug">
                     Voir la map
                 </nuxt-link>

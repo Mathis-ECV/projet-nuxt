@@ -4,12 +4,28 @@
         stuffType
         stuffTitle
         stuffSide
-      }
-      allStuffMirages {
+    }
+    allStuffMirages {
         stuffType
         stuffTitle
         stuffSide
-      }
+        stuffThrowing {
+            stuffThrowingPositionY
+            stuffThrowingPositionX
+            stuffThrowingType
+            stuffImageThrowingTop {
+            url
+            }
+            stuffImageThrowingView {
+            url
+            }
+            stuffImageThrowingViewZoom {
+            url
+            }
+        }
+        stuffLandingPositionY
+        stuffLandingPositionX
+    }
   }`
   
   
