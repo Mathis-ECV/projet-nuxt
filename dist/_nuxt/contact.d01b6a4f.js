@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as c,a as o}from"./entry.412f58ea.js";const n={},s=o("h1",null,"Contact",-1),a=[s];function _(r,l){return c(),t("section",null,a)}const f=e(n,[["render",_]]);export{f as default};

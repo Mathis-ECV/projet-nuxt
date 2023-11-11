@@ -1,0 +1,1 @@
+import{r as o,D as n,c,t as a,o as l}from"./entry.412f58ea.js";const i={__name:"lifecycle",setup(s){const t=o(0);return n(()=>{console.log(document.getElementById("count").textContent)}),(r,e)=>(l(),c("button",{id:"count",onClick:e[0]||(e[0]=u=>t.value++)},a(t.value),1))}};export{i as default};

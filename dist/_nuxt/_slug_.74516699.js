@@ -1,0 +1,1 @@
+import{v as o,c as s,t as a,P as t,o as r}from"./entry.412f58ea.js";const i={__name:"[slug]",setup(l){return o().params.slug==="admin"&&console.log("This is admin page"),(e,n)=>(r(),s("p",null,"Blog - "+a((e._.provides[t]||e.$route).params.slug),1))}};export{i as default};

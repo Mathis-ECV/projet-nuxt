@@ -1,0 +1,1 @@
+import{x as c,y as n,r as o,g as r,c as u,t as l,o as p}from"./entry.412f58ea.js";const _={__name:"computed",setup(i){const s=c({name:"John Doe",books:["Vue 2 - Advanced Guide","Vue 3 - Basic Guide","Vue 4 - The Mystery"]}),t=n(()=>s.books.length>0?"Yes":"No"),a=o(0);return o(0),r(a,e=>{console.log(`x is ${e}`)}),(e,d)=>(p(),u("p",null,l(t.value),1))}};export{_ as default};

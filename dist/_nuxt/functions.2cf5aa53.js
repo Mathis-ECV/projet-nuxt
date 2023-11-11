@@ -1,0 +1,1 @@
+import{c as s,a as e,t as a,F as l,o as c}from"./entry.412f58ea.js";const i={__name:"functions",setup(r){const n=()=>"John Doe",t=()=>console.log("John doe");return(m,o)=>(c(),s(l,null,[e("p",null,a(n()),1),e("button",{onClick:o[0]||(o[0]=p=>t())},"Console name")],64))}};export{i as default};
