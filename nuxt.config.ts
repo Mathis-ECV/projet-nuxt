@@ -18,4 +18,11 @@ export default defineNuxtConfig({
       default: './config/apollo.ts'
     }
   },
+  app: {
+    head: {
+      script: [
+        { type: 'text/javascript', hid: 'main', src: '/assets/js/main.js' }
+      ]
+    }
+  }
 })
