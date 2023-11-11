@@ -1,31 +1,33 @@
   export default gql`
   query stuff_inferno_query{
     allStuffInfernos {
-        stuffType
         stuffTitle
         stuffSide
-    }
-    allStuffMirages {
+        stuffType
+        id
+      }
+      allStuffMirages {
         stuffType
         stuffTitle
         stuffSide
         stuffThrowing {
-            stuffThrowingPositionY
-            stuffThrowingPositionX
-            stuffThrowingType
-            stuffImageThrowingTop {
+          stuffThrowingPositionY
+          stuffThrowingPositionX
+          stuffThrowingType
+          stuffImageThrowingTop {
             url
-            }
-            stuffImageThrowingView {
+          }
+          stuffImageThrowingView {
             url
-            }
-            stuffImageThrowingViewZoom {
+          }
+          stuffImageThrowingViewZoom {
             url
-            }
+          }
         }
         stuffLandingPositionY
         stuffLandingPositionX
-    }
+        id
+      }
   }`
   
   
