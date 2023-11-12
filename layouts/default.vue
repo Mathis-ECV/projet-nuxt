@@ -18,16 +18,17 @@ console.log( mainContent );
 */
 </script>
 
-
 <template>
     <section class="header">
         <div class="container">
             <nuxt-link to="/" exact><h3>ChessS2</h3></nuxt-link>
             <nav>
                 <ul>
+                    <!--
                     <li>
                         <nuxt-link to="/stuffs/maps" exact>Stuffs</nuxt-link>
                     </li>
+                    -->
                     <li>
                         <nuxt-link to="/strats/maps" exact>Strats</nuxt-link>
                     </li>
