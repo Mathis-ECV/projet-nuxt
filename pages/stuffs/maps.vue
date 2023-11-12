@@ -2,8 +2,8 @@
 
     import maps from '@/cms/queries/maps';
 
-    //const { data: AllMaps_data } = await useLazyAsyncQuery(maps);
-    const { data: AllMaps_data, pending: postsPendingMaps, error: blogErrorMaps } = await useLazyAsyncQuery(maps);
+    const { data: AllMaps_data } = await useLazyAsyncQuery(maps);
+    //const { data: AllMaps_data, pending: postsPendingMaps, error: blogErrorMaps } = await useLazyAsyncQuery(maps);
 
 </script>
 
