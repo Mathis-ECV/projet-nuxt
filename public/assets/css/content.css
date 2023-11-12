@@ -1,8 +1,60 @@
+/* Elements */
+/* Illustration */
+*, *::before, *::after {
+  font-family: "Lexend", sans-serif;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  background-color: #16161a;
+}
+
+input, button, textarea, select {
+  background-color: #7f5af0;
+  color: #fffffe;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fffffe;
+}
+
+p, a {
+  color: #94a1b2;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   width: clamp(200px, 100%, 1200px);
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .is-hidden {
   display: none;
+}
+
+.header {
+  background-color: #16161a;
+  border-bottom: 1px solid #7f5af0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20px;
+  margin: 0 auto;
+}
+.header .container ul {
+  display: flex;
+}
+.header .container ul li {
+  list-style: none;
+  margin-left: 1rem;
+}
+.header .container ul li a {
+  text-decoration: none;
+  color: #fffffe;
+  font-weight: bold;
 }/*# sourceMappingURL=content.css.map */

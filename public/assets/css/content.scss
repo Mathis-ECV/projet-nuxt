@@ -1,8 +1,61 @@
+@import 'variables';
+
+*, *::before, *::after {
+    font-family: 'Lexend', sans-serif;
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    background-color: $bg-primary;
+}
+
+input, button, textarea, select {
+    background-color: $bg-button;
+    color: $is-color-button;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $is-color-heading;
+}
+
+p, a{
+    color: $is-color-paragraph;
+}
+
+a{
+    text-decoration: none;
+}
+
 .container{
     width: clamp(200px, 100%, 1200px);
-    margin: 0 auto;
+    margin: 100px auto;
 }
 
 .is-hidden{
     display: none;
+}
+
+.header{
+    background-color: $bg-primary;
+    border-bottom: 1px solid $bg-button;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 20px;
+        margin: 0 auto;
+
+        ul{ 
+            display: flex;
+            li{
+                list-style: none;
+                margin-left: 1rem;
+                a{
+                    text-decoration: none;
+                    color: $is-color-heading;
+                    font-weight: bold;
+                }
+            }
+        }
+    }   
 }

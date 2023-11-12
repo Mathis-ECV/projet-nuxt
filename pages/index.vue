@@ -5,7 +5,10 @@
             This is an auto-imported component
         </AppInfo>
     </div>
-    <div class="image">
-        <img src="~/assets/image.jpg" alt="arbre" />
+    <div>
+        <nuxt-link to="/stuffs/maps">
+            <h2>Stuffs</h2>
+        </nuxt-link>
+        <h2>Strats</h2>
     </div>
 </template>

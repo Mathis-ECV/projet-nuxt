@@ -5,8 +5,12 @@ import stuffs from '@/cms/queries/stuffs';
 const route = useRoute();
 const slug = ref(route.params.slug);
 
-const { data: AllMaps_data } = await useLazyAsyncQuery(maps);
-const { data: AllStuffs } = await useLazyAsyncQuery(stuffs);
+//const { data: AllMaps_data } = await useLazyAsyncQuery(maps);
+//const { data: AllStuffs } = await useLazyAsyncQuery(stuffs);
+
+const { data: AllMaps_data, pending: postsPendingMaps, error: blogErrorMaps } = await useLazyAsyncQuery(maps);
+const { data: AllStuffs, pending: postsPendingStuffs, error: blogErrorStuffs } = await useLazyAsyncQuery(stuffs);
+
 
 // Méthode pour obtenir le nom de la propriété en fonction du slug (pour récuperer seulement les stuffs de la map)
 const getStuffPropertyName = () => {
