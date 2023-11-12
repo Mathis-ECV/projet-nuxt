@@ -1,14 +1,13 @@
 <template>
-    <div>
-        <h1>Welcome to the homepage</h1>
-        <AppInfo>
-            This is an auto-imported component
-        </AppInfo>
-    </div>
-    <div>
-        <nuxt-link to="/stuffs/maps">
-            <h2>Stuffs</h2>
-        </nuxt-link>
-        <h2>Strats</h2>
-    </div>
+    <section class="container">
+        <div>
+            <h1 class="is-centered">ChessS2</h1>
+        </div>
+        <div>
+            <nuxt-link to="/stuffs/maps">
+                <h2>Stuffs</h2>
+            </nuxt-link>
+            <h2>Strats</h2>
+        </div>
+    </section>
 </template>

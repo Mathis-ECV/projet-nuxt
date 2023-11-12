@@ -1,21 +1,11 @@
 
 <script setup>
 
-import nav from '@/cms/queries/nav';
+import maps from '@/cms/queries/maps';
 
-//const { data: articles, pending: postsPending, error: blogError } = await useLazyAsyncQuery(articles);
-// const { data: articlePost } = await useLazyAsyncQuery(articles);
-/*
-const { data: mainContent, pending: postsPending, error: blogError } = await useLazyAsyncQuery(nav);
+//const { data: AllMaps_data } = await useLazyAsyncQuery(maps);
+const { data: AllMaps_data, pending: postsPendingMaps, error: blogErrorMaps } = await useLazyAsyncQuery(maps);
 
-//const { data: mainContent } = await useLazyAsyncQuery(nav);
-
-
-
-console.log( mainContent );
-
-
-*/
 </script>
 
 <template>
@@ -23,9 +13,16 @@ console.log( mainContent );
         <div class="container">
             <nuxt-link to="/" exact><h3>ChessS2</h3></nuxt-link>
             <nav>
-                <ul>
-                    <li>
+                <ul class="menu-items">
+                    <li class="menu-item">
                         <nuxt-link to="/stuffs/maps" exact>Stuffs</nuxt-link>
+                        <ul class="menu-sub-items">
+                            <li v-for="map in AllMaps_data.allMaps" :key="map.id">
+                                <nuxt-link v-if="map.mapSlug" :to="'/stuffs/' + map.mapSlug">
+                                    {{map.mapTitle}}
+                                </nuxt-link>
+                            </li>
+                        </ul>
                     </li>
                     <!--
                     <li>
@@ -38,17 +35,6 @@ console.log( mainContent );
     </section>
     <div>
  
-      
-        <!-- <h2>{{ mainContent.titleSite }}</h2> 
-
-    <ul v-if="!pending">
-        <li v-for="link in mainContent.mainContent.navLinks" :key="link.id">
-            {{ link.title }}
-        </li>
-    </ul>
-    <p v-else-if="pending">Loading...</p>
--->
-        <!-- <p>{{mainContent.mainContent.linksMainNav.linksNavMain[0].title }}</p> -->
      
     </div>
     <NuxtPage />
@@ -56,4 +42,3 @@ console.log( mainContent );
         <h2>Footer</h2>
     </footer>
 </template>
-

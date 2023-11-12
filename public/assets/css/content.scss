@@ -35,27 +35,8 @@ a{
     display: none;
 }
 
-.header{
-    background-color: $bg-primary;
-    border-bottom: 1px solid $bg-button;
-    .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 20px;
-        margin: 0 auto;
-
-        ul{ 
-            display: flex;
-            li{
-                list-style: none;
-                margin-left: 1rem;
-                a{
-                    text-decoration: none;
-                    color: $is-color-heading;
-                    font-weight: bold;
-                }
-            }
-        }
-    }   
+.is-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

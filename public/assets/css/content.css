@@ -35,26 +35,8 @@ a {
   display: none;
 }
 
-.header {
-  background-color: #16161a;
-  border-bottom: 1px solid #7f5af0;
-}
-.header .container {
+.is-centered {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 20px;
-  margin: 0 auto;
-}
-.header .container ul {
-  display: flex;
-}
-.header .container ul li {
-  list-style: none;
-  margin-left: 1rem;
-}
-.header .container ul li a {
-  text-decoration: none;
-  color: #fffffe;
-  font-weight: bold;
 }/*# sourceMappingURL=content.css.map */

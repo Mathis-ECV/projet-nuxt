@@ -9,6 +9,7 @@
   background-color: red;
   border-radius: 50%;
   position: absolute;
+  cursor: pointer;
 }
 .map-top-view .pin.pin-throwing {
   background-color: blue;
