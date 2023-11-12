@@ -39,6 +39,8 @@ const { data: AllMaps_data, pending: postsPendingMaps, error: blogErrorMaps } = 
     </div>
     <NuxtPage />
     <footer>
-        <h2>Footer</h2>
+        <section class="container">
+            <h2 class="is-centered">Footer</h2>
+        </section>
     </footer>
 </template>

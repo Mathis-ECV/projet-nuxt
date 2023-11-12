@@ -1,11 +1,9 @@
-
-
-.map-top-view{
+.map-top-view {
     position: relative;
     width: 500px;
     aspect-ratio: 1;
 
-    .pin{
+    .pin {
         width: 16px;
         height: 16px;
         background-color: red;
@@ -13,22 +11,29 @@
         position: absolute;
         cursor: pointer;
 
-        &.pin-throwing{
+        &.pin-throwing {
             background-color: blue;
         }
 
-        &.pin-landing{
+        &.pin-landing {
             height: 30px;
             width: 30px;
             background-color: transparent;
-            background-position: left top;
+            background-position: center center;
             background-repeat: no-repeat;
         }
     }
 }
 
-.main-content-map{
+.main-content-map {
     display: grid;
     grid-template-areas: '. .';
     grid-template-columns: repeat(2, 1fr);
+}
+
+button.active {
+    background-color: #007bff;
+    /* Par exemple, une couleur bleue pour indiquer l'élément actif */
+    color: #fff;
+    /* Couleur de texte en surbrillance */
 }

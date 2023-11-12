@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .map-top-view {
   position: relative;
   width: 500px;
@@ -18,7 +19,7 @@
   height: 30px;
   width: 30px;
   background-color: transparent;
-  background-position: left top;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -26,4 +27,11 @@
   display: grid;
   grid-template-areas: ". .";
   grid-template-columns: repeat(2, 1fr);
+}
+
+button.active {
+  background-color: #007bff;
+  /* Par exemple, une couleur bleue pour indiquer l'élément actif */
+  color: #fff;
+  /* Couleur de texte en surbrillance */
 }/*# sourceMappingURL=stuffs-map.css.map */
