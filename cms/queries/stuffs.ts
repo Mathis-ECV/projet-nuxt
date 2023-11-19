@@ -1,4 +1,4 @@
-  export default gql`
+export default gql`
   query stuff_inferno_query{
     allStuffInfernos {
         stuffTitle
@@ -20,14 +20,10 @@
           stuffImageThrowingView {
             url
           }
-          stuffImageThrowingViewZoom {
-            url
-          }
         }
         stuffLandingPositionY
         stuffLandingPositionX
         id
       }
   }`
-  
-  
+

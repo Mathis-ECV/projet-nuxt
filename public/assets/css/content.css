@@ -1,6 +1,8 @@
 /* Elements */
 /* Illustration */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   font-family: "Lexend", sans-serif;
   font-family: "Mulish", sans-serif;
 }
@@ -9,16 +11,25 @@ body {
   background-color: #16161a;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   background-color: #7f5af0;
   color: #fffffe;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #fffffe;
 }
 
-p, a {
+p,
+a {
   color: #94a1b2;
 }
 
@@ -27,8 +38,8 @@ a {
 }
 
 .container {
-  width: clamp(200px, 100%, 1200px);
   margin: 100px auto;
+  padding: 30px;
 }
 
 .is-hidden {

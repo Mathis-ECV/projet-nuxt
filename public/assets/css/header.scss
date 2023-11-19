@@ -1,24 +1,25 @@
 @import 'variables';
 
-.header{
+.header {
     background-color: $bg-primary;
     border-bottom: 1px solid $bg-button;
-    .container{
+
+    .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 20px;
+        padding: 1rem 50px;
         margin: 0 auto;
 
-        ul.menu-items{ 
+        ul.menu-items {
             display: flex;
 
-            li.menu-item{
+            li.menu-item {
                 list-style: none;
                 margin-left: 1rem;
                 position: relative;
 
-                &::after{
+                &::after {
                     content: '';
                     display: block;
                     position: absolute;
@@ -29,31 +30,31 @@
                     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23ffffff'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z' fill='%23ffffff'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
                 }
 
-                a{
+                a {
                     text-decoration: none;
                     color: $is-color-heading;
                     font-weight: bold;
                 }
 
-                .menu-sub-items{
+                .menu-sub-items {
                     position: absolute;
-                    flex-direction: column;   
+                    flex-direction: column;
                     padding: 0;
                     display: none;
                     background-color: $bg-primary;
 
-                    li{
+                    li {
                         list-style: none;
                         margin: 0;
                     }
                 }
 
-                &:hover{
-                    .menu-sub-items{
+                &:hover {
+                    .menu-sub-items {
                         display: block;
                     }
                 }
             }
         }
-    }   
+    }
 }

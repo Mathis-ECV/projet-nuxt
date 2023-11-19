@@ -1,41 +1,52 @@
 @import 'variables';
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     font-family: 'Lexend', sans-serif;
     font-family: 'Mulish', sans-serif;
 }
 
-body{
+body {
     background-color: $bg-primary;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
     background-color: $bg-button;
     color: $is-color-button;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $is-color-heading;
 }
 
-p, a{
+p,
+a {
     color: $is-color-paragraph;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.container{
-    width: clamp(200px, 100%, 1200px);
+.container {
     margin: 100px auto;
+    padding: 30px;
 }
 
-.is-hidden{
+.is-hidden {
     display: none;
 }
 
-.is-centered{
+.is-centered {
     display: flex;
     justify-content: center;
     align-items: center;
