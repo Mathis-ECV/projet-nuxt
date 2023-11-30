@@ -3,6 +3,8 @@
 import maps from '@/cms/queries/maps';
 import stuffs from '@/cms/queries/stuffs';
 
+import BuyCoffee from '@/components/BuyLambo.vue';
+
 // Utilisation de l'utilitaire useRoute pour obtenir les paramètres de l'URL
 const route = useRoute();
 const slug = ref(route.params.slug);
@@ -123,6 +125,12 @@ const filteredStuffs = computed(() => {
       </div>
     </div>
   </section>
+  <section class="section-container">
+    <LastArticles />
+  </section>
+  <section class="section-container">
+    <BuyLambo />
+  </section>
 </template>
 
 <script>
@@ -166,7 +174,6 @@ export default {
         selectedFiltersAndMaps.style.transition = 'width 0.3s ease-in-out'; // Ajoutez la transition
         selectedFiltersAndMaps.style.width = width ? `${width}px` : 'auto';
         // Ajoutez d'autres styles au besoin
-
         window.scrollTo({
           top: window.scrollY + 500,
           behavior: 'smooth', // Ajoutez le comportement de défilement en douceur
@@ -175,8 +182,8 @@ export default {
     },
     zoom(e) {
       var zoomer = e.currentTarget;
-      var offsetX = e.offsetX || e.touches.pageX;
-      var offsetY = e.offsetY || e.touches.pageY;
+      var offsetX = e.offsetX || e.touches;
+      var offsetY = e.offsetY || e.touches;
       var x = offsetX / zoomer.offsetWidth * 100;
       var y = offsetY / zoomer.offsetHeight * 100;
       zoomer.style.backgroundPosition = x + '% ' + y + '%';

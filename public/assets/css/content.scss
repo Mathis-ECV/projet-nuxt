@@ -42,6 +42,12 @@ a {
     padding: 30px;
 }
 
+.section-container {
+    padding: clamp(30px, 5vw, 100px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .is-hidden {
     display: none;
 }

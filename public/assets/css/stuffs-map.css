@@ -92,7 +92,7 @@ figure.zoom {
   position: relative;
   width: 100%;
   overflow: hidden;
-  cursor: zoom-in;
+  cursor: none;
 }
 
 figure.zoom img:hover {

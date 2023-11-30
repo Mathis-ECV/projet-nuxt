@@ -1,7 +1,7 @@
 <script setup>
 
 
-import articles from '@/cms/queries/articles';
+import articles from '~/cms/queries/last_articles.js';
 
 //const { data: articles, pending: postsPending, error: blogError } = await useLazyAsyncQuery(articles);
 const { data: AllArticles_data, pending: postsPendingArticles, error: blogErrorArticles } = await useLazyAsyncQuery(articles);
