@@ -1,0 +1,26 @@
+section.last_articles .container-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: ". . .";
+  gap: 20px;
+}
+
+section.last_articles .container-articles li {
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+  section.last_articles .container-articles {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: ". .";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.last_articles .container-articles {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: ".";
+  }
+}
+
+/*# sourceMappingURL=composants.css.map */
