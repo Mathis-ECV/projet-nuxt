@@ -3,5 +3,6 @@ query nav{
   mainContent {
     titleSite
     textCopyright
+    subTitle
   }
 }`

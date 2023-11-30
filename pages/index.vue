@@ -1,7 +1,13 @@
+
+<script setup>
+import main_content from '@/cms/queries/main_content';
+
+const { data: Main_content_data } = await useLazyAsyncQuery(main_content);
+</script>
 <template>
     <section class="container">
         <div>
-            <h1 class="is-centered">ChessS2</h1>
+            <h1 class="is-centered">{{ Main_content_data.mainContent.titleSite }}</h1>
         </div>
         <div>
             <nuxt-link to="/stuffs/maps">
