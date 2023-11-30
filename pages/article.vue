@@ -1,5 +1,5 @@
 <script setup>
-
+/*
 
 import articles from '~/cms/queries/last_articles.js';
 
@@ -8,16 +8,16 @@ const { data: AllArticles_data, pending: postsPendingArticles, error: blogErrorA
 //const { data: AllArticles_data } = await useLazyAsyncQuery(articles);
 
 console.log(AllArticles_data);
-
+*/
 </script>
 
 <template>
     <div>
+        <!--
+                            <li v-for="article in AllArticles_data.allArticles" :key="article.id">
 
-        <li v-for="article in AllArticles_data.allArticles" :key="article.id">
-
-            {{ article.title }}
-        </li>
-
+                                {{ article.title }}
+                            </li>
+                    -->
     </div>
 </template>

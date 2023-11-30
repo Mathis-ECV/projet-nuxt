@@ -1,6 +1,6 @@
 export default gql`
 query Articles{
-    allArticles(first: 3) {
+    allArticles{
         title
         id
         articleUrl
