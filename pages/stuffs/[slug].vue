@@ -3,7 +3,6 @@
 import maps from '@/cms/queries/maps';
 import stuffs from '@/cms/queries/stuffs';
 
-import BuyCoffee from '@/components/BuyLambo.vue';
 
 // Utilisation de l'utilitaire useRoute pour obtenir les paramètres de l'URL
 const route = useRoute();
@@ -126,10 +125,10 @@ const filteredStuffs = computed(() => {
     </div>
   </section>
   <section class="section-container">
-    <LastArticles />
-  </section>
-  <section class="section-container">
     <BuyLambo />
+  </section>
+  <section class="section-container last_articles">
+    <LastArticles />
   </section>
 </template>
 

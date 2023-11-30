@@ -27,19 +27,17 @@ const { data: AllMaps_data, pending: postsPendingMaps, error: blogErrorMaps } = 
                         </ul>
                     </li>
                     <!--
-                                            <li>
-                                                <nuxt-link to="/strats/maps" exact>Strats</nuxt-link>
-                                            </li>
-                                            -->
+                                                                            <li>
+                                                                                <nuxt-link to="/strats/maps" exact>Strats</nuxt-link>
+                                                                            </li>
+                                                                            -->
                 </ul>
             </nav>
         </div>
     </section>
-    <div>
 
-
-    </div>
     <NuxtPage />
+
     <footer>
         <section>
             <h2 class="is-centered">2023 ChessS2</h2>

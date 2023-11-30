@@ -14,18 +14,21 @@ console.log(AllArticles_data);
 
 <template>
     <h2>Lasts Articles</h2>
-    <div>
+    <div class="container-articles">
 
         <li v-for="article in AllArticles_data.allArticles" :key="article.id">
 
-            <img :src="article.thumbnailArticle.url" alt="Thumbnail" />
+            <nuxt-link v-if="article.articleUrl" :to="'/blog/' + article.articleUrl">
 
-            <!-- Afficher le titre -->
-            <h2>{{ article.title }}</h2>
+                <img :src="article.thumbnailArticle.url" alt="Thumbnail" />
 
-            <!-- Afficher un extrait du contenu -->
-            <p>{{ getArticleExcerpt(article) }}</p>
+                <!-- Afficher le titre -->
+                <h2>{{ article.title }}</h2>
 
+                <!-- Afficher un extrait du contenu -->
+                <p>{{ getArticleExcerpt(article) }}</p>
+
+            </nuxt-link>
         </li>
 
     </div>

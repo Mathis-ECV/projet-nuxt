@@ -107,3 +107,24 @@ figure.zoom img {
     display: block;
     width: 100%;
 }
+
+
+// Responsive média queries //
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+    .filters-and-maps {
+        width: 300px;
+    }
+
+    .content-stuff {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}

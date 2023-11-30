@@ -10,4 +10,7 @@
             <h2>Strats</h2>
         </div>
     </section>
+    <section class="section-container last_articles">
+        <LastArticles />
+    </section>
 </template>

@@ -103,4 +103,17 @@ figure.zoom img {
   transition: opacity 0.5s;
   display: block;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .filters-and-maps {
+    width: 300px;
+  }
+  .content-stuff {
+    display: flex;
+    flex-direction: column;
+  }
+  .content-stuff img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=stuffs-map.css.map */
