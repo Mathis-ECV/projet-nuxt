@@ -75,9 +75,9 @@ const filteredStuffs = computed(() => {
               :class="{ active: stuffFilters.includes('grenade') }">Grenades</button>
           </div>
 
-        <!-- Affichage de la carte et des équipements filtrés -->
-        <div class="main-content-map">
-          <div class="map-top-view" :style="{ 'background-image': `url(${map.mapTopView.url})` }">
+          <!-- Affichage de la carte et des équipements filtrés -->
+          <div class="main-content-map">
+            <div class="map-top-view" :style="{ 'background-image': `url(${map.mapTopView.url})` }">
               <!-- Boucle sur les équipements filtrés -->
               <div v-for="stuffs in filteredStuffs" :key="stuffs.id">
                 <!-- Affichage des pins d'atterrissage (pin-landing) -->
@@ -124,11 +124,11 @@ const filteredStuffs = computed(() => {
       </div>
     </div>
   </section>
-  <!--
-    <section class="section-container">
-      <BuyLambo />
-    </section>
-    -->
+
+  <section class="section-container">
+    <BuyLambo />
+  </section>
+
   <section class="section-container last_articles">
     <LastArticles />
   </section>
