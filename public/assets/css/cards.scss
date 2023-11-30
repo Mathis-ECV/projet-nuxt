@@ -1,7 +1,24 @@
-.container-cards-map{
+.container-cards-map {
     display: grid;
     grid-template-areas: '. . .';
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     margin: 0 auto;
+}
+
+
+// Responsive média queries //
+
+@media screen and (max-width: 1024px) {
+    .container-cards-map {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: '. .';
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-cards-map {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: '.';
+    }
 }
