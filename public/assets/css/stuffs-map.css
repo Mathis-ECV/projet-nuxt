@@ -105,6 +105,10 @@ figure.zoom img {
   width: 100%;
 }
 
+.map-generator {
+  max-width: 600px;
+}
+
 @media screen and (max-width: 768px) {
   .filters-and-maps {
     width: 300px;
