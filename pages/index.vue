@@ -7,7 +7,7 @@ const { data: Main_content_data } = await useLazyAsyncQuery(main_content);
 <template>
     <section class="container">
         <div>
-            <h1 class="is-centered">{{ Main_content_data.mainContent.titleSite }}</h1>
+            <h1 class="is-centered">{{ Main_content_data.mainContent.subTitle }}</h1>
         </div>
         <div>
             <nuxt-link to="/stuffs/maps">
