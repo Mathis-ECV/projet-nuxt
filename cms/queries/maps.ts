@@ -1,5 +1,5 @@
 
-  export default gql`
+export default gql`
   query maps_query{
     allMaps {
         mapTitle
@@ -12,5 +12,4 @@
         mapSlug
       }
   }`
-  
-  
+

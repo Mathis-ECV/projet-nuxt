@@ -7,7 +7,7 @@
             <nuxt-link to="/stuffs/maps">
                 <h2>Stuffs</h2>
             </nuxt-link>
-            <h2>Strats</h2>
+            <h2>Strats (Comming Soon)</h2>
         </div>
     </section>
     <section class="section-container last_articles">

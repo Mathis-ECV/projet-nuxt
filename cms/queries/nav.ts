@@ -1,5 +1,5 @@
 
-
+/*
 
   export default gql`
 query nav{
@@ -17,4 +17,4 @@ query nav{
     }
   }
 }`
-
+*/

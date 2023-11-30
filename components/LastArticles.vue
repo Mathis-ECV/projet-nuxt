@@ -7,7 +7,6 @@ import Last_articles from '~/cms/queries/last_articles.ts';
 const { data: AllArticles_data, pending: postsPendingArticles, error: blogErrorArticles } = await useLazyAsyncQuery(Last_articles);
 //const { data: AllArticles_data } = await useLazyAsyncQuery(articles);
 
-console.log(AllArticles_data);
 
 
 </script>

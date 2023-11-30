@@ -8,8 +8,6 @@ import CTA_Text from '~/cms/queries/BuyMeLambo.ts';
 const { data: CTA_Text_data, pending: postsPendingArticles, error: blogErrorArticles } = await useLazyAsyncQuery(CTA_Text);
 //const { data: AllArticles_data } = await useLazyAsyncQuery(articles);
 
-console.log(CTA_Text_data);
-
 
 </script>
 
